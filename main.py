@@ -10,7 +10,7 @@ def main():
     print("Khóa Public là: ", public_key)
     print("Khóa Private là: ", private_key)
 
-    message = 'Lớp Toán tin K63'
+    message = input("Nhập thông điệp của bạn: ")
     print("Tin nhắn cần gửi: ", message)
     signature = sign_message(private_key, message)
     print("Chữ ký số: ", signature)
